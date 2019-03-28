@@ -1,5 +1,5 @@
 {
-  "name": "glearn",
+  "name": "g-learn",
   "version": "1.0.0",
   "description": "a jquery-like lib to help me learn js&node&visualization",
   "main": "src/index.js",

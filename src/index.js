@@ -1,9 +1,9 @@
 var gQuery = function (selector, context) {
-  return new jQuery.fn.init(selector, context)
+  return new gQuery.fn.init(selector, context)
 }
 
-gQuery.fn = jQuery.prototype = {
-  constructor: jQuery,
+gQuery.fn = gQuery.prototype = {
+  constructor: gQuery,
   length: 0,
   toArray: function () {
     return [].slice.call(this)
@@ -59,7 +59,7 @@ gQuery.fn = jQuery.prototype = {
   }
 }
 
-jQuery.fn.init.prototype = jQuery.prototype
+gQuery.fn.init.prototype = gQuery.prototype
 
 function showHide(elements, show) {
   var display, elem,
